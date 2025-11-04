@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             UI_B_COnnect = new Button();
+            UI_B_Disco = new Button();
             SuspendLayout();
             // 
             // UI_B_COnnect
@@ -41,11 +42,22 @@
             UI_B_COnnect.UseVisualStyleBackColor = true;
             UI_B_COnnect.Click += UI_B_COnnect_Click;
             // 
+            // UI_B_Disco
+            // 
+            UI_B_Disco.Location = new Point(363, 214);
+            UI_B_Disco.Name = "UI_B_Disco";
+            UI_B_Disco.Size = new Size(75, 23);
+            UI_B_Disco.TabIndex = 1;
+            UI_B_Disco.Text = "Disco";
+            UI_B_Disco.UseVisualStyleBackColor = true;
+            UI_B_Disco.Click += UI_B_Disco_Click;
+            // 
             // Client
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(UI_B_Disco);
             Controls.Add(UI_B_COnnect);
             Name = "Client";
             Text = "Client";
@@ -56,5 +68,6 @@
         #endregion
 
         private Button UI_B_COnnect;
+        private Button UI_B_Disco;
     }
 }

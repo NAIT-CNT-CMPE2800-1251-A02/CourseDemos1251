@@ -50,7 +50,10 @@ namespace Server
 
         private void UI_B_SendData_Click(object sender, EventArgs e)
         {
+            // send some data!
             byte[] data = new byte[] { 1, 2, 42, 7 };
+
+            // blocking permitted!
             _csok?.Send(data);
         }
     }
